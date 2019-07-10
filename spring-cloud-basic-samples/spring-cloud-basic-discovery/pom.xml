@@ -12,4 +12,9 @@
     <artifactId>spring-cloud-basic-discovery</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>spring-cloud-basic-ribbon</module>
+        <module>spring-cloud-basic-feign</module>
+    </modules>
+
 </project>

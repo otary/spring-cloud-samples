@@ -5,13 +5,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class HelloService {
+public class WeatherService {
 
     @Autowired
     RestTemplate restTemplate;
 
-    public String sayHello(String name) {
-        return restTemplate.getForObject("http://SPRING-CLOUD-BASIC-EUREKA-CLIENT/hello/say?name=" + name, String.class);
+    /**
+     * 使用restTemplate远程调用
+     *
+     * @return
+     */
+    public String today() {
+        return restTemplate.getForObject("http://SPRING-CLOUD-BASIC-EUREKA-CLIENT/weatchers/today", String.class);
     }
 
 }
