@@ -1,6 +1,7 @@
 package cn.chenzw.springcloud.basic.config.git.client.service;
 
 import cn.chenzw.springcloud.basic.config.git.client.ConfigGitClientApp;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class SamplesServiceTests {
     SamplesService samplesService;
 
     @Test
-    public void testPrint(){
-        samplesService.print();
+    public void testPrint() {
+        Assert.assertEquals(samplesService.print(), "111@222");
     }
 }

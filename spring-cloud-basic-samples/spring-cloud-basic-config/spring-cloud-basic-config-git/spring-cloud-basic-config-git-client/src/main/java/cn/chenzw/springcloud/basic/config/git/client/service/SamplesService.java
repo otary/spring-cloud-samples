@@ -9,8 +9,10 @@ public class SamplesService {
     @Value("${a}")
     private Integer a;
 
+    @Value("${b}")
+    private Integer b;
+
     public String print(){
-        System.out.println("---------------" + a);
-        return "111";
+        return a + "@" + b;
     }
 }
