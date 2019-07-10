@@ -14,10 +14,9 @@ public class WeatherController {
     @Autowired
     WeatherService weatherService;
 
-
     @GetMapping("/today")
     public String today() {
-        return weatherService.todayFromClient();
+        return "feign: " + weatherService.todayFromClient();
     }
 
 }

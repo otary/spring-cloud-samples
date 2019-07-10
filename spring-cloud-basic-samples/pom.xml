@@ -15,6 +15,7 @@
         <module>spring-cloud-basic-config</module>
         <module>spring-cloud-basic-eureka</module>
         <module>spring-cloud-basic-discovery</module>
+        <module>spring-cloud-basic-zuul</module>
     </modules>
 
 

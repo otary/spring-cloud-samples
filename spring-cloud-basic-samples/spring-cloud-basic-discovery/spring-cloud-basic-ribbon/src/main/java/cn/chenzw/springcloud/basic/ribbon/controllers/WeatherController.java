@@ -16,7 +16,7 @@ public class WeatherController {
 
     @GetMapping("/today")
     public String today() {
-        return weatherService.today();
+        return "ribbon: " + weatherService.today();
     }
 
 }
