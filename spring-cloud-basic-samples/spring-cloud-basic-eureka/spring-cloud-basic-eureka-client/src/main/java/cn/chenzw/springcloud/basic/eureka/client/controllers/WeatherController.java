@@ -1,5 +1,6 @@
 package cn.chenzw.springcloud.basic.eureka.client.controllers;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/weathers")
 public class WeatherController {
+    
+    @Value("${spring.application.name}")
+    private String appName;
 
     @GetMapping("/today")
     public String today() {
-        return "temperature: 25, humidity: 82, info: 阴, direct: 西北风, power: 3级";
+        return appName + ": [temperature: 25, humidity: 82, info: 阴, direct: 西北风, power: 3级]";
     }
 }
