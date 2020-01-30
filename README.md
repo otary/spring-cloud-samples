@@ -17,7 +17,9 @@
   - [spring-cloud-basic-config-git](./spring-cloud-basic-samples/spring-cloud-basic-config/spring-cloud-basic-config-git)：基于git仓库的配置中心
     - [spring-cloud-basic-config-git-server](./spring-cloud-basic-samples/spring-cloud-basic-config/spring-cloud-basic-config-git/spring-cloud-basic-config-git-server): 基于git仓库的配置中心服务端
     - [spring-cloud-basic-config-git-client](./spring-cloud-basic-samples/spring-cloud-basic-config/spring-cloud-basic-config-git/spring-cloud-basic-config-git-client): 基于git仓库的配置中心客户端
-
+- [spring-cloud-basic-sleuth-zipkin](./spring-cloud-basic-samples/spring-cloud-basic-sleuth-zipkin): 调用链监控
+    - [spring-cloud-basic-sleuth-zipkin-producer](./spring-cloud-basic-samples/spring-cloud-basic-sleuth-zipkin/spring-cloud-basic-zipkin-producer): 
+    - [spring-cloud-basic-sleuth-zipkin-consumer](./spring-cloud-basic-samples/spring-cloud-basic-sleuth-zipkin/spring-cloud-basic-zipkin-consumer): 
 - [spring-cloud-basic-security](./spring-cloud-basic-samples/spring-cloud-basic-security)
   - [spring-cloud-basic-security-authorization-server](./spring-cloud-basic-samples/spring-cloud-basic-security/spring-cloud-basic-security-authorization-server): 认证、授权中心
      - 端口: 8766
