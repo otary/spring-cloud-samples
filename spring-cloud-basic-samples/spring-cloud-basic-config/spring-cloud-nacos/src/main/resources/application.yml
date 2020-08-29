@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-cloud-nacos
+
+server:
+  port: 9837
+
+my:
+  name: zhangsan
+  age: 10
