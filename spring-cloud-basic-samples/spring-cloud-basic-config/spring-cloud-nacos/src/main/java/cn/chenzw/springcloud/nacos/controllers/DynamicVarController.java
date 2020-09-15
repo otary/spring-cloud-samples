@@ -22,12 +22,18 @@ public class DynamicVarController {
     @Value("${my.age}")
     private Integer age;
 
+
     @Autowired
     UserProperties userProperties;
 
     @GetMapping("/getName")
     public String getName() {
         return name + ":" + userProperties;
+    }
+
+    @GetMapping("/getAge")
+    public Integer getAge() {
+        return age;
     }
 
 

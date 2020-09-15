@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-basic-config-git</module>
+        <module>spring-cloud-nacos</module>
     </modules>
-
-
 </project>
